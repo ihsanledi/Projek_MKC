@@ -1,0 +1,59 @@
+# Python
+*.py[cod]
+*.pyc
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+.eggs/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+*.py[cod]
+*.pyo
+*.so
+local_settings.py
+media/
+staticfiles/
+
+# Environments
+.env
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VSCode
+.vscode/
+
+# MacOS
+.DS_Store
+
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sentry files
+.sentryclirc
+
+# Celery
+celerybeat-schedule
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pytest
+.pytest_cache/
