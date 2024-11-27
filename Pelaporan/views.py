@@ -12,6 +12,10 @@ def Login(request):
     return render(request, 'Login.html')
 
 
+def Signin(request):
+    return render(request, 'Signin.html')
+
+
 
 
 
