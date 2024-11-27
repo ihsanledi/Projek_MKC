@@ -1,18 +1,85 @@
 {% extends 'index.html' %}
+{% load static %}
+
+
+{% block head %} 
+<link rel="stylesheet" href="{% static 'css/Login.css' %}">
+<link
+href="{% static 'Assets/fontawesome-free-6.6.0-web/css/fontawesome.css' %}"
+rel="stylesheet"
+/>
+<link
+href="{% static 'Assets/fontawesome-free-6.6.0-web/css/brands.css' %}"
+rel="stylesheet"
+/>
+<link
+href="{% static 'Assets/fontawesome-free-6.6.0-web/css/solid.css' %}"
+rel="stylesheet"
+/>
+
+{% endblock head %} 
+
+
+
 {% block content %} 
     <div class="Container">
         <div class="formContainer">
-            <form action="">
 
                 <h1>Masuk ke akun Anda</h1>
                 <br>
-                <h3>Selamat datang kembali! Pilih metode untuk Login:</h3>
+                <h5>Selamat datang kembali! Pilih metode untuk Login:</h5>
+
+                <div class="ButtonContainer">
+                    
+                <div class="buttonBox">
+                    <img src="../../static/Assets/icons/search.png" alt="Logo" class="icons">
+                 <button class="ButtonLogin">Google</button>
+                </div>
+
+                <div class="buttonBox">
+                    <img src="../../static/Assets/icons/facebook.png" alt="Logo" class="icons">
+                 <button class="ButtonLogin">Facebook</button>
+                </div>
+              
+               
+                 
+                </div>
+      
+
+              <div class="line">
+                <div class="teksAtau"><p>Atau</p></div>
+            </div>
+
+            <br>
+            <label for="Email">Email</label>
+            <br>
+
+            <input type="email" name="Email" id="Email" placeholder="Masukkan Email Anda" class="InputUniversal">
+            <br>
+            <br>
+            <label for="Password">Password</label>
+            <br>
+
+            <input type="password" name="Password" id="Password" placeholder= "Masukkan Password Anda" class="InputUniversal">
+            <br>
+            <br>
+            <a href="#" class="LupaPass">Lupa Password??</a>
+
+            <br>
+            <br>
+            <button type="submit" class="BtnSubmit">Masuk</button>
+
+
+
+
             </form>
 
         </div>
-        <div class="ImageContent">
-            <img src="" alt="">
+        <div class="imageContent">
+           <b class="TextB">Lihat Fasilitas <br>Infrastruktur kampus <br> Rusak? Masuk untuk <br>Laporkan sekarang!!</b>
         </div>
+
+        <div class="LogoRepril">REPRIL</div>
 
 
 
